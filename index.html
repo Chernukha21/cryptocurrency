@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="number" v-on:input="getValue">
+      <div class="container">
+          <div>
+            <img src="https://cdn.dribbble.com/users/2140/screenshots/3814090/bitcoin_2x_1x.png"/>
+            <p>{{ (result.length > 0) ? result[0]["name"] : '' }} : {{(result.length > 0) ? result[0]["mult"] : ''}}</p>
+          </div>
+          <div>
+            <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX26668525.jpg"/>
+            <p>{{ (result.length > 0) ? result[1]["name"] : '' }} :  {{(result.length > 0) ? result[1]["mult"] : ''}}</p>
+          </div>
+          <div>
+            <img src="http://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ripple-XRP-icon.png"/>
+            <p>{{ (result.length > 0) ? result[2]["name"] : '' }}  : {{(result.length > 0) ? result[2]["mult"] : ''}}</p>
+          </div>
+          <div>
+            <img src="https://thumbs.dreamstime.com/b/dash-coin-symbol-icon-sign-emblem-vector-illustration-96184585.jpg"/>
+           <p>{{ (result.length > 0) ? result[3]["name"] : '' }}  : {{(result.length > 0) ? result[3]["mult"] : ''}}</p>
+          </div>
+          <div>
+            <img src="https://previews.123rf.com/images/mikegreen/mikegreen1710/mikegreen171000012/87427839-zcash-icon-for-internet-money-crypto-currency-symbol-for-using-in-web-projects-or-mobile-application.jpg"/>
+            <p>{{ (result.length > 0) ? result[4]["name"] : '' }}  : {{(result.length > 0) ? result[4]["mult"] : ''}}</p>
+          </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+<html>
